@@ -13,11 +13,11 @@ module_dir = this_dir / "espeak_phonemizer"
 long_description: str = ""
 readme_path = this_dir / "README.md"
 if readme_path.is_file():
-    long_description = readme_path.read_text()
+    long_description = ""
 
 version_path = module_dir / "VERSION"
 with open(version_path, "r") as version_file:
-    version = version_file.read().strip()
+    version = ""
 
 # -----------------------------------------------------------------------------
 
